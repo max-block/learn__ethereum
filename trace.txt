@@ -1,0 +1,4 @@
+openethereum:
+- trace_call, trace_callMany works with tracing=off
+- trace_block doens't work (returs None) for tracing=on/off
+- trace_call doesn't trace events

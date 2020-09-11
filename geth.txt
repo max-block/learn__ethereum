@@ -1,0 +1,19 @@
+--> documentation
+https://geth.ethereum.org/docs/
+
+--> install via ppa
+add-apt-repository -y ppa:ethereum/ethereum && apt install ethereum -y
+
+--> run node
+geth --nousb --rpc --ws --rpcaddr=0.0.0.0 --wsaddr=0.0.0.0 --rpcport=8545 --wsport=8546 --wsorigins="*" --cache=4096
+
+ufw allow ssh
+ufw allow 30303
+ufw allow 8545
+ufw allow 8546
+
+
+--> sync light mode
+geth --syncmode light
+
+this node doesn't work with ws/rpc

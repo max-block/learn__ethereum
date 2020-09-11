@@ -1,0 +1,14 @@
+[Unit]
+Description=geth
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=geth --config /etc/geth.toml
+Restart=always
+# Restart=on-failure
+RestartPreventExitStatus=SIGHUP
+MemoryAccounting=true
+
+[Install]
+WantedBy=default.target

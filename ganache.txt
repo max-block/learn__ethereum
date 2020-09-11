@@ -1,0 +1,5 @@
+--> install
+npm install -g ganache-cli
+
+--> run with mnemonic
+ganache-cli -m "mystery audit session film kind frequent say hurry spring surface bargain liberty"

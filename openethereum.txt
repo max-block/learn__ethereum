@@ -1,0 +1,27 @@
+--> docs
+https://openethereum.github.io/wiki/
+
+--> online config generator
+https://paritytech.github.io/parity-config-generator/
+
+--> install via downloading a single binary from github
+https://github.com/openethereum/openethereum/releases
+
+--> kovan testnet
+parity --chain kovan --no-warp
+
+--> Ropsten testnet
+parity --chain ropsten
+
+--> goerly testnet
+openethereum --chain goerli --warp-barrier=2744680
+
+--> Geth attach to parity
+geth attach ~/.local/share/io.parity.ethereum/jsonrpc.ipc
+
+--> db size (2020-05-06)
+parity --chain goerli                           5.0G
+parity --chain goerli --tracing on              6.7G
+
+--> json-rpc
+openethereum --chain goerli --warp-barrier=2874680  --ws-interface=0.0.0.0 --ws-port=8546 --ws-hosts=all --ws-origins=all --ws-apis=all --jsonrpc-interface=0.0.0.0 --jsonrpc-port=8545 --jsonrpc-hosts=all --jsonrpc-apis=all

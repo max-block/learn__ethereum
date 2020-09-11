@@ -1,0 +1,10 @@
+--> Only openetherum works with Kovan
+parity --chain kovan
+
+--> Kovan faucets
+https://faucet.kovan.network/
+https://kovan.faucet.enjin.io/
+
+--> Ropsten faucets
+https://faucet.ropsten.be/
+https://teth.bitaps.com/
